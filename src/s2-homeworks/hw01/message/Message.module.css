@@ -1,0 +1,78 @@
+.message {
+    display: grid;
+    grid-template-rows: 1fr 12px;
+    max-width: 1140px;
+}
+
+.imageAndText {
+    display: grid;
+    grid-template-columns: 1092px 48px;
+    grid-template-rows: 1fr;
+    grid-auto-columns: minmax(auto, 600px);
+    max-height: 1fr;
+}
+
+.imageAndText img {
+    max-height: 48px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+    align-self: end;
+    margin-top: 12px;
+}
+
+.text {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    min-width: 0;
+    max-width: 500px;
+    min-height: 60px;
+    align-self: end;
+    justify-self: end;
+    padding: 8px 13px 8px 13px;
+    margin-right: 13px;
+    display: grid;
+    background-color: #0066CC;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: -1px -1px 10px #0066CC;
+}
+
+.text:after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 10px; bottom: 0; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-bottom: 10px solid #0066CC;/* Добавляем треугольник */
+    right: -10px;
+}
+
+.name {
+    justify-self: right;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.messageText {
+    min-width: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 474px;
+    word-break: break-all;
+    white-space: pre-wrap;
+    text-align: right;
+}
+
+.time {
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: 12px;
+    justify-self: right;
+    max-width: 26px;
+    max-height: 10px;
+
+}

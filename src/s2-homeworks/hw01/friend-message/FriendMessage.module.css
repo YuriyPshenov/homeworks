@@ -1,0 +1,72 @@
+.friendMessage {
+    display: grid;
+}
+
+.friendImageAndText {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: 1fr;
+}
+
+.friendImageAndText img {
+    max-height: 48px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: end;
+    align-self: end;
+    margin-top: 12px;
+}
+
+.friendText {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    max-width: 500px;
+    min-height: 60px;
+    align-self: start;
+    justify-self: start;
+    padding: 8px 13px 8px 13px;
+    margin-left: 13px;
+    display: grid;
+    background-color: #F5F7FB;
+    color: black;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 1px -1px 10px lightgrey;
+}
+
+.friendText:after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: -10px; bottom: 0; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-bottom: 10px solid #F5F7FB;/* Добавляем треугольник */
+}
+
+.friendName {
+    justify-self: left;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.friendMessageText {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    min-width: auto;
+    justify-self: end;
+    max-width: 700px;
+    overflow-wrap: break-word;
+    white-space: break-spaces;
+    word-break: break-word;
+    text-align: left;
+}
+
+.friendTime {
+    font-size: 10px;
+    font-weight: 600;
+    margin-left: 10px;
+    justify-self: left;
+    max-width: 26px;
+}

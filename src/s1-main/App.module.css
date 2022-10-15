@@ -1,0 +1,37 @@
+.App {
+    --header_height: 60px;
+    margin: 0 auto;
+
+}
+
+.hw1 {
+    display: grid;
+    grid-template-rows: 144px 1px 1fr;
+    background-color: white;
+}
+
+.hwTitle {
+    width: 1280px;
+    padding: 107px 0 0 70px;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+hr {
+    border: 1px solid #F5F7FB;
+}
+
+.hw {
+    border-top: 1px solid #F5F7FB;
+    padding: 24px 70px 32px 70px;
+    display: grid;
+    max-height: 1fr;
+    grid-gap: 10px;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-self: center;
+    background-color: white;
+}
