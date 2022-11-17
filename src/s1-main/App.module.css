@@ -34,4 +34,5 @@ hr {
     margin: 0 auto;
     justify-self: center;
     background-color: white;
+    z-index: 1;
 }
