@@ -4,24 +4,31 @@
 
 .sidebar.open {
     position: fixed;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 63px 1fr;
     width: 317px;
     height: 100%;
-    background-color: royalblue;
+    background-color: white;
+    z-index: 4;
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .background {
     width: 100%;
     height: 100%;
     position: fixed;
+    z-index: 3;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 2;
 }
 
 .nav {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .nav a {
@@ -29,16 +36,22 @@
 }
 
 .nav a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+    color: #58ACFF;
 }
 
 .nav a.active {
-    color: red;
+    margin-bottom: 40px;
+    color: #0059B2;
+    text-decoration: underline;
 }
 .close {
     width: 24px;
     height: 24px;
-    margin-bottom: 23px;
+    justify-self: end;
+    align-self: center;
+    border: none;
+    background-color: white;
+    margin: 16px 24px 0 0;
 }
 
 .close img {
