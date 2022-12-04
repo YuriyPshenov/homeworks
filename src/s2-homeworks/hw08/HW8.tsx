@@ -53,6 +53,8 @@ const HW8 = () => {
         setCurrentSort('18')
     }
 
+    console.log(initialPeople)
+
     return (
         <div id={'hw3'}>
             <div className={s2.hwTitle}>Homework #8</div>
